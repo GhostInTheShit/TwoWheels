@@ -8,4 +8,23 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Business\Services\" />
+      <Folder Include="DataAccess\" />
+      <Folder Include="Presentation\Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.1" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="Presentation\Views\MainWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
 </Project>
